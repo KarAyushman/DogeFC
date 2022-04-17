@@ -2,7 +2,7 @@
  * Monarch Aerospace 2022 ©
  * Programmed by:- Ayushman LP. Kar
  * 
- * This is the program for the Model Rocket Motor Test Stand
+ * This is the program for the Model Rocket Motor Test Stand.
  * 
  ***/
 
@@ -12,8 +12,8 @@
 
 
 //Pins:
-const int HX711_dout = 9; //mcu > HX711 dout pin
-const int HX711_sck = 13; //mcu > HX711 sck pin
+const int HX711_dout = 9;
+const int HX711_sck = 13;
 
 //HX711 Constructors:
 HX711_ADC LoadCell(HX711_dout, HX711_sck);
