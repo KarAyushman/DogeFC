@@ -164,7 +164,7 @@ void loadTest(){
     delay(1000);
     Serial.println("Column 3 - Total Impulse (in Nsecs)");
     delay(500);
-    Serial.print("Current Calibration Factor is ");
+    Serial.print("Current Calibration Factor is: ");
     Serial.println(calVal);
     Serial.println("Press s to begin sequence or e to edit Calibration Factor");
 
@@ -186,7 +186,7 @@ void loadTest(){
 
     double taret = 80;
     scale.tare(taret);
-    scale.set_scale(413.53);
+    scale.set_scale(calVal);
 
     mtime = micros()/1000000.f;
     force = scale.get_units()*0.009806f;
